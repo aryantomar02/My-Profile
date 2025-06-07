@@ -1,0 +1,167 @@
+body{
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;}
+
+h1{
+    color: #66bfbf;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-family: "Sacramento", cursive;
+}
+
+h2 {
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+    color: #40514e;
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    line-height: 2;
+}
+
+hr {
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+a {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+  }
+
+.footer {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #30E3CA;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 30px;
+}
+.one {
+    background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.two, .three, .four{
+    margin: 100px 0;
+}
+
+.four{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    margin-top: 0;
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.hello{
+    max-width: 500px;
+    display: inline-block;
+}
+
+.foo{
+    padding: 30px;
+    background-color: #E4F9F5;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .four {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+}
+
+a:hover {
+    color: #eaf6f6;
+    background-color: #11999e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+  
+.two, .three, .four {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.button {
+    background-color: #66bfbf;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.button:hover {
+    background-color: #11999e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #30E3CA;
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar a {
+    color: #40514e;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    color: #eaf6f6;
+    background-color: #11999e;
+}
